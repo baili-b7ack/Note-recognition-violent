@@ -115,8 +115,9 @@ def play(sound_file):
 
 if __name__ == "__main__":
 
-        file_name = "Audio"+".wav"
+        file_name = "vocals"+".wav"
         sound_file = wave.open(file_name)
+        sound_file.getparams()
         Identified_Notes = play(sound_file)
         print(Identified_Notes)
     
